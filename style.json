@@ -1,29 +1,12 @@
 {
-  "version": 8,
-  "name": "SeaMap",
-  "sources":{},
-  "sprite": "mapbox://sprites/examples/cjikt35x83t1z2rnxpdmjs7y7",
-  "glyphs": "mapbox://fonts/{username}/{fontstack}/{range}.pbf",
-  "layers": [
-    {
-      "id": "seamaptiles",
-      "type": "raster",
-      "source": "seamap",
-      "minzoom": 0,
-      "maxzoom": 22,
-      "paint": {
-        "raster-opacity": 0.8
-      }
-    },
-    {
-      "id": "rivers",
-      "type": "line",
-      "source": "mapbox://mapbox.mapbox-streets-v8",
-      "source-layer": "waterway",
-      "paint": {
-        "line-color": "#ffc0cb"
-      }
-    }
-  ],
-  "id": "seamap"
+    "version": 8,
+    "name": "Mapbox Basic Template",
+    "center": [-122.40394403415746, 37.7840200119777],
+    "zoom": 13.583507831201326,
+    "bearing": 0,
+    "pitch": 0,
+    "sprite": "mapbox://sprites/mapbox/cjf4m44iw0uza2spb3q0a7s41/4ju5zyizue7d2qr71g29q47y7",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "sources": { "composite": {"type": "vector", "url": "mapbox://mapbox.mapbox-streets-v8"} },
+    "layers": []
 }
