@@ -8,10 +8,6 @@
       "tiles": [
         "https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"
       ]
-    },
-    "basemap": {
-      "type": "vector",
-      "url": "mapbox://mapbox.mapbox-streets-v6"
     }
   },
   "sprite": "mapbox://sprites/examples/cjikt35x83t1z2rnxpdmjs7y7",
@@ -28,9 +24,13 @@
       }
     },
     {
-      "id": "water",
-      "type": "fill",
-      "source": "mapbox"
+      "id": "rivers",
+      "type": "line",
+      "source": "mapbox://mapbox.mapbox-streets-v8",
+      "source-layer": "waterway",
+      "paint": {
+        "line-color": "#ffc0cb"
+      }
     }
   ],
   "id": "seamap"
