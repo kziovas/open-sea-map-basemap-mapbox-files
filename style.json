@@ -1,6 +1,11 @@
 {
   "version": 8,
   "name": "SeaMap",
+  "style": "mapbox://styles/mapbox/streets-v9",
+  "center": [
+    23.689340024746343,
+    37.83994683709345
+  ],
   "sources": {
     "seamap": {
       "type": "raster",
