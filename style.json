@@ -5,7 +5,7 @@
     "seamap": {
       "type": "raster",
       "tileSize": 256,
-      "url": [
+      "tiles": [
         "https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"
       ]
     }
