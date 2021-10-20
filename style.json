@@ -27,7 +27,7 @@
             "id": "openseamap",
             "type": "raster",
             "source": "seamap",
-            "paint": {"raster-opacity": 0.8}
+            "paint": {"raster-opacity": 0.7}
         }
     ]
 }
