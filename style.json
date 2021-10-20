@@ -21,6 +21,18 @@
             "id": "background",
             "type": "background",
             "paint": {"background-color": "rgba(224, 224, 208, 1)"}
+        },
+        {
+            "id": "openseamap",
+            "type": "raster",
+            "source": {
+                "type": "raster",
+                "tiles": ["https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"],
+                "tileSize": 256
+            },
+            "minzoom": 0,
+            "maxzoom": 22,
+            "paint": {"raster-opacity": 0.8}
         }
     ]
 }
