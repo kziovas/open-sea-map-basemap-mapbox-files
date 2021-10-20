@@ -1,6 +1,7 @@
 {
   "version": 8,
   "name": "SeaMap",
+  "sources":{},
   "sprite": "mapbox://sprites/examples/cjikt35x83t1z2rnxpdmjs7y7",
   "glyphs": "mapbox://fonts/{username}/{fontstack}/{range}.pbf",
   "layers": [
