@@ -13,7 +13,8 @@
             "name": "seamap",
             "tiles": ["https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"],
             "minzoom": 0,
-            "maxzoom": 22
+            "maxzoom": 22,
+            "tileSize": 256
         }
     },
     "layers": [
@@ -25,13 +26,7 @@
         {
             "id": "openseamap",
             "type": "raster",
-            "source": {
-                "type": "raster",
-                "tiles": ["https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"],
-                "tileSize": 256
-            },
-            "minzoom": 0,
-            "maxzoom": 22,
+            "source": "seamap",
             "paint": {"raster-opacity": 0.8}
         }
     ]
