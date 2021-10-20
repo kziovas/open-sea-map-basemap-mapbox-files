@@ -10,14 +10,6 @@
   },
   "sprite": "",
   "glyphs": "",
-  "layers": [{
-        "id": "openseamap",
-        "type": "raster",
-        "source": {
-          "type": "raster",
-          "tiles": ["https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"],
-          "tileSize": 256
-        }
-    }]
+  "layers": []
 }
 
