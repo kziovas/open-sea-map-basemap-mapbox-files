@@ -10,11 +10,17 @@
     "sources": {
         "seamap": {
             "type": "raster",
+            "name": "seamap",
             "tiles": ["https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"],
             "minzoom": 0,
-            "maxzoom": 22,
-            "tileSize": 256
+            "maxzoom": 22
         }
     },
-    "layers": []
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "paint": {"background-color": "rgba(224, 224, 208, 1)"}
+        }
+    ]
 }
