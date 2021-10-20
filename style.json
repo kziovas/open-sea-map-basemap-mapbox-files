@@ -20,7 +20,7 @@
         {
             "id": "background",
             "type": "background",
-            "paint": {"background-color": "rgba(224, 224, 208, 1)"}
+            "paint": {"background-color": "hsl(200, 49%, 68%)"}
         },
         {
             "id": "openseamap",
