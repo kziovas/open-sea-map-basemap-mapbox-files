@@ -1,11 +1,6 @@
 {
   "version": 8,
   "name": "SeaMap",
-  "style": "mapbox://styles/mapbox/streets-v9",
-  "center": [
-    23.689340024746343,
-    37.83994683709345
-  ],
   "sources": {
     "seamap": {
       "type": "raster",
@@ -13,6 +8,10 @@
       "tiles": [
         "https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"
       ]
+    },
+    "basemap": {
+      "type": "vector",
+      "url": "mapbox://mapbox.mapbox-streets-v6"
     }
   },
   "sprite": "mapbox://sprites/examples/cjikt35x83t1z2rnxpdmjs7y7",
@@ -26,6 +25,15 @@
       "maxzoom": 22,
       "paint": {
         "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "mapbox",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "#f0f"
       }
     }
   ],
