@@ -30,11 +30,7 @@
     {
       "id": "water",
       "type": "fill",
-      "source": "mapbox",
-      "source-layer": "water",
-      "paint": {
-        "fill-color": "#f0f"
-      }
+      "source": "mapbox"
     }
   ],
   "id": "seamap"
