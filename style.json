@@ -8,6 +8,12 @@
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "layers": [
         {
+            "id": "openseamap",
+            "type": "raster",
+            "source": "seamap",
+            "paint": {"raster-opacity": 0.8}
+        },
+        {
             "id": "background",
             "type": "background",
             "paint": {"background-color": "rgba(224, 224, 208, 1)"}
@@ -522,12 +528,6 @@
             "source": "openmaptiles",
             "maxzoom": 12,
             "source-layer": "place"
-        },
-        {
-            "id": "openseamap",
-            "type": "raster",
-            "source": "seamap",
-            "paint": {"raster-opacity": 0.8}
         }
     ],
     "bearing": 0,
