@@ -53,13 +53,6 @@
         "composite": {
             "url": "mapbox://mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox-public.bathymetry,examples.bathy_z8",
             "type": "vector"
-        },
-        "seamap": {
-            "type": "raster",
-            "url": "https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png",
-            "minzoom": 0,
-            "maxzoom": 22,
-            "tileSize": 256
         }
     },
     "sprite": "mapbox://sprites/kziovas/ckuzc922d0ovl14mtrqyv5y6a/7qp9vqgqm450qefuk7tu080th",
