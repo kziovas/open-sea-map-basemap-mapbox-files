@@ -1,18 +1,32 @@
 {
     "version": 8,
-    "name": "Bathymetry-SeaMap Style ",
+    "name": "Bathymetry Style ",
     "metadata": {
         "mapbox:type": "default",
         "mapbox:origin": "basic-v1",
-        "mapbox:sdk-support": {"js": "1.9.0", "android": "8.6.0", "ios": "5.6.0"},
+        "mapbox:sdk-support": {
+            "js": "1.9.0",
+            "android": "8.6.0",
+            "ios": "5.6.0"
+            
+        },
         "mapbox:autocomposite": true,
         "mapbox:groups": {
-            "d9f2d87692e78bd29f53e21eb48f8585": { "name": "Shadow Group"           , "collapsed": true  },
-            "Terrain, terrain-labels"         : { "name": "Terrain, terrain-labels"                     },
-            "Terrain, surface"                : { "name": "Terrain, surface"                            },
-            "Terrain, land"                   : { "name": "Terrain, land"          , "collapsed": false },
-            "337be478228c18d39124c98c116e6e01": { "name": "Shadow Group"           , "collapsed": true  },
-            "30091f618301dfbc8b6c89fc2f8f3e41": { "name": "Shadow layers"          , "collapsed": false }
+            "d9f2d87692e78bd29f53e21eb48f8585": {
+                "name": "Shadow Group",
+                "collapsed": true
+            },
+            "Terrain, terrain-labels": {"name": "Terrain, terrain-labels"},
+            "Terrain, surface": {"name": "Terrain, surface"},
+            "Terrain, land": {"name": "Terrain, land", "collapsed": false},
+            "337be478228c18d39124c98c116e6e01": {
+                "name": "Shadow Group",
+                "collapsed": true
+            },
+            "30091f618301dfbc8b6c89fc2f8f3e41": {
+                "name": "Shadow layers",
+                "collapsed": false
+            }
         },
         "mapbox:uiParadigm": "layers"
     },
@@ -20,10 +34,22 @@
     "zoom": 2.5465159647908777,
     "bearing": 0,
     "pitch": 9.50250720842957,
-    "light": {"color": "hsl(0, 0%, 100%)", "intensity": 0.46, "anchor": "viewport"},
+    "light": {
+        "color": "hsl(0, 0%, 100%)",
+        "intensity": 0.46,
+        "anchor": "viewport"
+    },
     "sources": {
-        "mapbox://mapbox.satellite": {"url": "mapbox://mapbox.satellite", "type": "raster", "tileSize": 256},
-        "mapbox://mapbox.terrain-rgb": {"url": "mapbox://mapbox.terrain-rgb", "type": "raster-dem", "tileSize": 256},
+        "mapbox://mapbox.satellite": {
+            "url": "mapbox://mapbox.satellite",
+            "type": "raster",
+            "tileSize": 256
+        },
+        "mapbox://mapbox.terrain-rgb": {
+            "url": "mapbox://mapbox.terrain-rgb",
+            "type": "raster-dem",
+            "tileSize": 256
+        },
         "composite": {
             "url": "mapbox://mapbox.mapbox-streets-v8,mapbox.mapbox-terrain-v2,mapbox-public.bathymetry,examples.bathy_z8",
             "type": "vector"
@@ -76,7 +102,19 @@
                     22,
                     -0.24
                 ],
-                "raster-contrast": [ "interpolate", ["linear"], ["zoom"], 0, 0, 9, 0.08, 11, -0.08, 22, 0 ]
+                "raster-contrast": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    0,
+                    0,
+                    9,
+                    0.08,
+                    11,
+                    -0.08,
+                    22,
+                    0
+                ]
             }
         },
         {
@@ -684,14 +722,11 @@
             "source": "composite",
             "source-layer": "water",
             "paint": {"fill-color": "hsl(199, 46%, 68%)", "fill-opacity": 0.43}
-        },
-        {
-            "id": "openseamap",
-            "type": "raster",
-            "source": "seamap",
-            "paint": {"raster-opacity": 0.8}
         }
     ],
+    "created": "2021-10-20T09:54:06.159Z",
+    "modified": "2021-10-20T10:20:45.167Z",
+    "id": "ckuzc922d0ovl14mtrqyv5y6a",
     "owner": "kziovas",
     "visibility": "public",
     "protected": false,
