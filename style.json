@@ -1,6 +1,6 @@
 {
     "version": 8,
-    "name": "Bathymetry Style ",
+    "name": "OpenSeaMap-Bathymetry Style ",
     "metadata": {
         "mapbox:type": "default",
         "mapbox:origin": "basic-v1",
@@ -56,7 +56,7 @@
         },
         "seamap": {
             "type": "raster",
-            "tiles": ["https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"],
+            "url": "https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png",
             "minzoom": 0,
             "maxzoom": 22,
             "tileSize": 256
@@ -722,11 +722,16 @@
             "source": "composite",
             "source-layer": "water",
             "paint": {"fill-color": "hsl(199, 46%, 68%)", "fill-opacity": 0.43}
+        },
+        {
+            "id": "openseamap",
+            "type": "raster",
+            "source": "seamap",
+            "paint": {"raster-opacity": 0.8}
         }
     ],
     "created": "2021-10-20T09:54:06.159Z",
     "modified": "2021-10-20T10:20:45.167Z",
-    "id": "ckuzc922d0ovl14mtrqyv5y6a",
     "owner": "kziovas",
     "visibility": "public",
     "protected": false,
